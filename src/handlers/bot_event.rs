@@ -30,6 +30,7 @@ impl EventHandler for BotEventHandler {
 
             match command_name {
                 "clear" => commands::clear::run(&ctx, &command).await,
+                "damnit-jimmy" => commands::damnit_jimmy::run(&ctx, &command).await,
                 "help" => commands::help::run(&ctx, &command).await,
                 "join" => commands::join::run(&ctx, &command).await,
                 "leave" => commands::leave::run(&ctx, &command).await,
@@ -80,6 +81,7 @@ impl EventHandler for BotEventHandler {
 
         let commands = vec![
             commands::clear::register(),
+            commands::damnit_jimmy::register(),
             commands::help::register(),
             commands::join::register(),
             commands::leave::register(),
