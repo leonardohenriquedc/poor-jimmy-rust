@@ -1,4 +1,5 @@
 pub mod clear;
+pub mod damnit_jimmy;
 pub mod help;
 pub mod join;
 pub mod leave;
