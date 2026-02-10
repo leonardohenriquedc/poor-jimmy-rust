@@ -74,7 +74,7 @@ pub async fn run(ctx: &Context, command: &CommandInteraction) {
         .query()
         .playlist(id_playlist.unwrap())
         .await
-        .expect("Nao foi possivel acessar playlist");
+        .expect("Unable to access playlist");
 
     playlist.videos.extend_limit(rp.query(), 50).await.unwrap();
 
