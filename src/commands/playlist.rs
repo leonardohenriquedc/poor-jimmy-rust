@@ -9,12 +9,10 @@ use tracing::error;
 use url::Url;
 
 use crate::utils::{
-    response::respond_to_followup,
-    track_utils::{enqueue_track, enqueue_track_list},
-    type_map::get_http_client,
+    response::respond_to_followup, track_utils::enqueue_track_list, type_map::get_http_client,
 };
 
-use rustypipe::{client::RustyPipe, model::VideoCodec};
+use rustypipe::client::RustyPipe;
 
 pub async fn run(ctx: &Context, command: &CommandInteraction) {
     let rp = RustyPipe::new();

@@ -1,7 +1,6 @@
-use serenity::all::{Command, GuildId, Interaction, Ready};
+use serenity::all::{GuildId, Interaction, Ready};
 use serenity::async_trait;
 use serenity::client::{Context, EventHandler};
-use serenity::futures::stream::Cycle;
 use serenity::gateway::ActivityData;
 use serenity::model::user::OnlineStatus;
 use tracing::{debug, error, info};
